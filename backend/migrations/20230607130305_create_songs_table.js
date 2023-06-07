@@ -45,6 +45,20 @@ export const up = (knex) => {
         .inTable('genres')
         .onDelete('CASCADE')
         .onUpdate('CASCADE');
+    tbl.integer('file_length').unsigned();
+    tbl.integer('song_length').unsigned();
+    tbl.integer('bit_rate').unsigned();
+    tbl.integer('sample_rate').unsigned();
+    tbl.integer('bpm').unsigned();
+    tbl.decimal('rating', 2, 1);
+    tbl.integer('play_count').unsigned();
+    tbl.integer('skip_count').unsigned();
+    tbl.dateTime('last_played');
+    tbl.dateTime('last_skipped');
+    tbl.dateTime('date_added');
+    tbl.dateTime('date_modified');
+    tbl.dateTime('date_released');
+    tbl.dateTime('date_recorded');
   });
 };
 
