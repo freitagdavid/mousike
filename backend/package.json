@@ -38,11 +38,11 @@
     "knex": "^2.4.2",
     "lodash": "^4.17.21",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.22",
     "sqlite3": "^5.1.6",
     "validatorjs": "^3.22.1"
   },
   "devDependencies": {
-    "plop": "^3.1.2"
+    "plop": "^3.1.2",
+    "nodemon": "^2.0.22",
   }
 }
