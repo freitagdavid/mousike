@@ -41,5 +41,8 @@
     "nodemon": "^2.0.22",
     "sqlite3": "^5.1.6",
     "validatorjs": "^3.22.1"
+  },
+  "devDependencies": {
+    "plop": "^3.1.2"
   }
 }
