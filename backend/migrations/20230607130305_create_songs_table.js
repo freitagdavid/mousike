@@ -59,6 +59,23 @@ export const up = (knex) => {
     tbl.dateTime('date_modified');
     tbl.dateTime('date_released');
     tbl.dateTime('date_recorded');
+    tbl.text('comment');
+    tbl.text('lyrics');
+    tbl.text('extended_tags');
+    tbl.text('music_brainz_id');
+    tbl.text('discogs_id');
+    tbl.text('spotify_id');
+    tbl.text('youtube_id');
+    tbl.text('soundcloud_id');
+    tbl.text('bandcamp_id');
+    tbl.text('itunes_id');
+    tbl.text('google_play_id');
+    tbl.text('amazon_id');
+    tbl.text('quality');
+    tbl.text('occasion');
+    tbl.text('mood');
+    tbl.text('tempo');
+    tbl.text('language');
   });
 };
 
