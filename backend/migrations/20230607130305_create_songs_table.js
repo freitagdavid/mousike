@@ -37,8 +37,6 @@ export const up = (knex) => {
         .notNullable();
     tbl.text('song_path')
         .notNullable();
-    tbl.integer('year')
-        .unsigned();
     tbl.integer('genre_id')
         .unsigned()
         .references('id')
@@ -57,8 +55,6 @@ export const up = (knex) => {
     tbl.dateTime('last_skipped');
     tbl.dateTime('date_added');
     tbl.dateTime('date_modified');
-    tbl.dateTime('date_released');
-    tbl.dateTime('date_recorded');
     tbl.text('comment');
     tbl.text('lyrics');
     tbl.text('extended_tags');
